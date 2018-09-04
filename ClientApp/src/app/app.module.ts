@@ -7,16 +7,26 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { JobDetailComponent } from './jobs/job-detail/job-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AboutComponent } from './about/about.component';
+import { LabComponent } from './lab/lab.component';
+import { FetchDataComponent } from './lab/fetch-data/fetch-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    MessagesComponent,
+    JobsComponent,
+    JobDetailComponent,
+    DashboardComponent,
+    AboutComponent,
+    LabComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -24,8 +34,11 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'jobs', component: JobsComponent },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'chat', component: MessagesComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'lab', component: LabComponent },
     ])
   ],
   providers: [],

@@ -18,13 +18,23 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/counter"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-education'></span> Counter
+                    <a [routerLink]='["/dashboard"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-user'></span> Dashboard
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/fetch-data"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    <a [routerLink]='["/chat"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-comment'></span> Messages
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/about"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-cog'></span> Settings
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/lab"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-ice-lolly-tasted'></span> Lab (Only for Development)
                     </a>
                 </li>
             </ul>
